@@ -1,0 +1,14 @@
+server {
+listen 80;
+listen [::]:80;
+server_name mysecondpage.com;
+
+root /usr/share/nginx/html;
+index secondpage.html;
+autoindex on;
+
+location / {
+try_files $uri $uri/ =404;
+}
+}
+

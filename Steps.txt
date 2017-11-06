@@ -1,0 +1,42 @@
+
+Step by Step Procedure
+================================
+
+Step 1 : You need to select the OS platform either windows (or) Linux
+but VT-X mode should be enabled on that machine.
+
+Step 2: You need to install Virtualbox latest version.
+For Centos-7
+================
+# yum update -y
+# yum -y install gcc dkms make qt libgomp patch 
+# yum -y install kernel-headers kernel-devel binutils glibc-headers glibc-devel font-forge
+# yum -y install wget curl -y
+# cd /etc/yum.repo.d/
+# wget http://download.virtualbox.org/virtualbox/rpm/rhel/virtualbox.repo
+# yum install -y VirtualBox-5.1
+# /usr/lib/virtualbox/vboxdrv.sh setup
+
+Step 3: You need to install vagrant and git
+# cd /opt/
+# wget https://releases.hashicorp.com/vagrant/2.0.0/vagrant_2.0.0_x86_64.rpm
+# yum localinstall vagrant_2.0.0_x86_64.rpm -y 
+# yum install -y git
+
+Step 4: Once you installed everything, create one project folder for this.
+# mkdir /home/task-1/
+# git init .
+
+Step 5: Just copy the contents from my Git repo to your local machine
+# git clone https://github.com/nagendran28/vagrant-docker-nginx-task1.git
+
+
+Add the host entries as it is below.
+
+
+
+
+
+
+
+
