@@ -30,6 +30,8 @@ Step 4: Once you installed everything, create one project folder for this.
 
 Step 5: Just copy the contents from my Git repo to your local machine
 # git clone https://github.com/nagendran28/vagrant-docker-nginx-task1.git
+# cd vagrant-docker-nginx-task1/
+# vagrant up
 
 
 Add the host entries as it is below.
