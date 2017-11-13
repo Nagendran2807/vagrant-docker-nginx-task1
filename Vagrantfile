@@ -6,8 +6,8 @@
 Vagrant.configure("2") do |config|
 
   # boxes at https://vagrantcloud.com/search.
-  config.vm.provider = "virtualbox"
   config.vm.box = "centos/7"
+  #config.vm.provider = "virtualbox"
 
   # Create a forwarded port mapping which allows access to a specific port
   # within the machine from a port on the host machine and only allow access

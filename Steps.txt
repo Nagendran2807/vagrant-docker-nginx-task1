@@ -15,6 +15,7 @@ For Centos-7
 # cd /etc/yum.repo.d/
 # wget http://download.virtualbox.org/virtualbox/rpm/rhel/virtualbox.repo
 # yum install -y VirtualBox-5.1
+# reboot
 # /usr/lib/virtualbox/vboxdrv.sh setup
 
 Step 3: You need to install vagrant and git
@@ -32,6 +33,26 @@ Step 5: Just copy the contents from my Git repo to your local machine
 
 
 Add the host entries as it is below.
+
+# cat >> /etc/hosts <<EOF
+127.0.0.1  myfirstpage.com
+127.0.0.1  mysecondpage.com
+127.0.0.1  mythirdpage.com
+EOF
+
+
+# check everything is working or not...
+# go to that vagrant machine (If you login to vagrant machine using putty 
+you need to generate .ppk file from .pem file and port is 2222, host is 127.0.0.1)
+
+# vagrant status
+# vagrant global-status
+# vagrant box list
+# systemctl status docker.service
+# curl http://myfirstpage.com
+# curl http://mysecondpage.com
+# curl http://mythirdpage.com
+
 
 
 
